@@ -1,7 +1,6 @@
 
 from exercises.petting_zoo import Cobra, Copperhead, Donkey, Eel, Garden_Snake, Goat, King_Snake, Llama, Mallard, Milk_Frog, Rat_Snake, Rhinoceros, Sloth, Slow_Loris, Tortoise
-# from .cobra import Cobra
-# from .copperhead import Copperhead 
+
 
 miss_fuzz = Llama("miss_fuzz", "fancy_llama")
 mr_madof = Rat_Snake("mr_madof", "fancy_rat_snake")
