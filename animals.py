@@ -1,6 +1,18 @@
-
-from exercises.petting_zoo import Cobra, Copperhead, Donkey, Eel, Garden_Snake, Goat, King_Snake, Llama, Mallard, Milk_Frog, Rat_Snake, Rhinoceros, Sloth, Slow_Loris, Tortoise
-
+from exercises.petting_zoo.cobra import Cobra
+from exercises.petting_zoo.copperhead import Copperhead
+from exercises.petting_zoo.donkey import Donkey
+from exercises.petting_zoo.eel import Eel
+from exercises.petting_zoo.garden_snake import Garden_Snake
+from exercises.petting_zoo.goat import Goat
+from exercises.petting_zoo.king_snake import King_Snake
+from exercises.petting_zoo.llama import Llama
+from exercises.petting_zoo.mallard import Mallard
+from exercises.petting_zoo.milk_frog import Milk_Frog
+from exercises.petting_zoo.rat_snake import Rat_Snake
+from exercises.petting_zoo.rhinoceros import Rhinoceros
+from exercises.petting_zoo.sloth import Sloth
+from exercises.petting_zoo.slow_loris import Slow_Loris
+from exercises.petting_zoo.tortoise import Tortoise
 
 miss_fuzz = Llama("miss_fuzz", "fancy_llama")
 mr_madof = Rat_Snake("mr_madof", "fancy_rat_snake")
