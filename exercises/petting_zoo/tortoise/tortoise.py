@@ -2,7 +2,7 @@ from datetime import date
 
 class Tortoise:
 
-    def __init__(self, name, species, shift):
+    def __init__(self, name, species, shift, food):
         self.name = name
         self.species = species
         self.shift = shift
@@ -10,6 +10,7 @@ class Tortoise:
         self.walking = True
         self.swimming = False
         self.slithering = False
+        self.food = food
 
     def feed(self):
         print(f"{self.name} was fed {self.food} on {date.today().strftime('%m/%d/%Y')}")

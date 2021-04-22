@@ -13,23 +13,53 @@ from exercises.petting_zoo.rhinoceros import Rhinoceros
 from exercises.petting_zoo.sloth import Sloth
 from exercises.petting_zoo.slow_loris import Slow_Loris
 from exercises.petting_zoo.tortoise import Tortoise
+from exercises.petting_zoo import PettingZoo, PuddlePond, SlitherInn
+
+Reptile_Row = SlitherInn("Reptile Row")
+Peach_Pond = PuddlePond("Peach Pond")
+Cuddle_Cove = PettingZoo("Cuddle Cove")
 
 
 
-# mr_madof = Rat_Snake("mr_madof", "fancy_rat_snake")
-# mr_charm = Cobra("mr_charm", "fancy_cobra")
-# miss_goldy = Copperhead("miss_goldy", "fancy_copperhead")
-# mr_strong = Donkey("mr_strong", "fancy_donky")
-# ms_buzz = Eel("ms_buzz", "fancy_eel")
-# mr_flower = Garden_Snake("mr_flower", "fancy_garden_snake")
-# mr_curly = Goat("mr_curly", "fancy_goat")
-# mr_tiny = King_Snake("mr_tiny", "fancy_king_snake")
-# dr_quack = Mallard("dr_quack", "fancy_mallard")
-# miss_misty = Milk_Frog("miss_misty", "fancy_milk_frog")
-# mr_gentle = Rhinoceros("mr_gentle", "fancy_rhinoceros")
-# miss_chill = Sloth("miss_chill", "fancy_sloth")
-# mr_careful = Slow_Loris("mr_careful", "fancy_slow_loris")
-# miss_wise = Tortoise("miss_wise", "fancy_tortoise")
 
+
+mr_madof = Rat_Snake("mr_madof", "fancy_rat_snake", "snake chow")
+mr_charm = Cobra("mr_charm", "fancy_cobra", "snake chow")
+miss_goldy = Copperhead("miss_goldy", "fancy_copperhead", "snake chow")
+mr_strong = Donkey("mr_strong", "fancy_donky", "afternoon", "donkey chow")
+ms_buzz = Eel("ms_buzz", "fancy_eel", "eel sauce")
+mr_flower = Garden_Snake("mr_flower", "fancy_garden_snake", "snake chow")
+mr_curly = Goat("mr_curly", "fancy_goat", "midday", "goat chow")
+mr_tiny = King_Snake("mr_tiny", "fancy_king_snake", "snake chow")
 miss_fuzz = Llama("Miss Fuzz", "fancy llama", "morning", "Llama chow")
-print(miss_fuzz.feed())
+dr_quack = Mallard("dr_quack", "fancy_mallard", "midday", "bread crumbs")
+miss_misty = Milk_Frog("miss_misty", "fancy_milk_frog", "afternoon", "bugz")
+mr_gentle = Rhinoceros("mr_gentle", "fancy_rhinoceros", "morning", "soul food")
+miss_chill = Sloth("miss_chill", "fancy_sloth", "midday", "eucalyptus smoothies")
+mr_careful = Slow_Loris("mr_careful", "fancy_slow_loris", "morning", "Slow leaves")
+miss_wise = Tortoise("miss_wise", "fancy_tortoise", "afternoon", "Turtle chow")
+
+Reptile_Row.animals.append(mr_madof)
+Reptile_Row.animals.append(mr_charm)
+Reptile_Row.animals.append(mr_tiny)
+Reptile_Row.animals.append(miss_goldy)
+Reptile_Row.animals.append(mr_flower)
+Peach_Pond.animals.append(ms_buzz)
+Peach_Pond.animals.append(dr_quack)
+Peach_Pond.animals.append(miss_misty)
+Peach_Pond.animals.append(mr_gentle)
+Peach_Pond.animals.append(miss_wise)
+Cuddle_Cove.animals.append(mr_strong)
+Cuddle_Cove.animals.append(mr_curly)
+Cuddle_Cove.animals.append(miss_fuzz)
+Cuddle_Cove.animals.append(miss_chill)
+Cuddle_Cove.animals.append(mr_careful)
+
+for animal in Reptile_Row.animals:
+    print(f'You can find {animal.name} the {animal.species} in {Reptile_Row.attraction_name}')
+
+for animal in Peach_Pond.animals:
+    print(f'You can find {animal.name} the {animal.species} in {Peach_Pond.attraction_name}')
+
+for animal in Cuddle_Cove.animals:
+    print(f'You can find {animal.name} the {animal.species} in {Cuddle_Cove.attraction_name}')
