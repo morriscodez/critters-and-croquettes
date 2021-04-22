@@ -29,3 +29,11 @@ mr_gentle = Rhinoceros("mr_gentle", "fancy_rhinoceros")
 miss_chill = Sloth("miss_chill", "fancy_sloth")
 mr_careful = Slow_Loris("mr_careful", "fancy_slow_loris")
 miss_wise = Tortoise("miss_wise", "fancy_tortoise")
+
+miss_fuzz.shift = "midday"
+print("flag", miss_fuzz.shift)
+mr_strong.shift = "afternoon"
+mr_curly.shift = "afternoon"
+dr_quack.shift = "morning"
+mr_gentle.shift = "midday"
+miss_chill.shift = "afternoon"
