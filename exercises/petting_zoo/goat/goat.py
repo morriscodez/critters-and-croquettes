@@ -4,7 +4,7 @@ from datetime import date
 class Goat:
 
 
-    def __init__(self, name, species, food):
+    def __init__(self, name, species, shift, food):
 
         self.name = name
         self.species = species
