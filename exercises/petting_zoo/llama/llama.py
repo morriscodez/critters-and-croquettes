@@ -1,20 +1,16 @@
 from datetime import date
+from exercises.petting_zoo.animal import Animal
+from exercises.petting_zoo import 
 
-class Llama:
+class Llama(Animal):
 
 
     def __init__(self, name, species, shift, food, chip_num):
 
 
-        self.name = name
-        self.species = species
+        super().__init__(self, name, species, shift, food, chip_num)
         self.shift = shift
-        self.walling = True
-        self.slithering = False
-        self.swimming = False
-        self.date_added = date.today()
-        self.food = food
-        self.__chip_number = chip_num
+        self.walking = True
 
     def feed(self):
         print(f"{self.name} was fed {self.food} on {date.today().strftime('%m/%d/%Y')}")
